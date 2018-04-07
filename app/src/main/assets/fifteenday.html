@@ -1,0 +1,88 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Highcharts Example</title>
+
+	<style type="text/css">
+		${demo.css}
+	</style>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/exporting.js"></script>
+	<script src="js/no-data-to-display.js"></script>
+	<script type="text/javascript">
+
+     var container;
+
+      var options1 = {
+          chart: {
+               type: 'line',  //默认图表类型line, spline, area, areaspline, column, bar, pie , scatter
+               marginRight:5,
+               renderTo:'container'
+        },
+          title: {
+            text: '最近半个月气温',
+            x: -20 //center
+        },
+        subtitle: {
+            text: '来源: 极速数据',
+            x: -20
+        },
+        xAxis: {
+            categories: []
+        },
+        yAxis: {
+            title: {
+                text: 'Temperature (°C)'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: '°C'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: '最高气温',
+            data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2,7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2,18.4]
+        }, {
+            name: '最低气温',
+            data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0,3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0,15.6]
+        }]
+      };
+
+
+
+      function showData3(value) {
+          var data = JSON.parse(value);
+          //alert(data.seriesdata);
+          options1.xAxis.categories = data.weeks;
+          options1.series[0].data = data.highTemps;
+          options1.series[1].data = data.lowTemps;
+          container =  new Highcharts.Chart(options1);
+      };
+
+    </script>
+</head>
+<body>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<!-- Calls into the javascript interface for the activity -->
+<!-- 从HTML文件中调用activity中的函数 demo对应addJavascriptInterface(new DemoJavaScriptInterface(), "demo");-->
+<!-- 也就是从HTML到android程序 留意window.demo.clickOnAndroid()这句话 -->
+<a onClick="window.demo.clickOnAndroid()">确定</a>
+
+</body>
+</html>
+
+

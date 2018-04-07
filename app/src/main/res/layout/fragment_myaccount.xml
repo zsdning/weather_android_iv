@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluegreen">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <RelativeLayout
+                    android:id="@+id/layout_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/title_home"
+                    android:paddingTop="@dimen/margin"
+                    >
+
+                    <Button
+                        android:id="@+id/btn_login_register"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="70dp"
+                        android:background="@drawable/login_button_shape"
+                        android:text="登录/注册"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sevenSize" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightred"
+                    android:paddingTop="@dimen/margin"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="3dp"
+                        android:drawableTop="@drawable/icon_touxiang"
+                        android:gravity="center"
+                        android:text="zsdning"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btn_collect"
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_double"
+                        android:layout_marginRight="@dimen/margin_double"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/icon_shoucang"
+                        android:gravity="center"
+                        android:text="收藏"
+                        android:textColor="@color/transblack"
+                        android:textSize="@dimen/fivesize" />
+
+                    <TextView
+                        android:id="@+id/btn_gonight"
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_double"
+                        android:layout_marginRight="@dimen/margin_double"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/icon_yejian"
+                        android:gravity="center"
+                        android:text="夜间"
+                        android:textColor="@color/transblack"
+                        android:textSize="@dimen/fivesize" />
+
+                    <TextView
+                        android:id="@+id/btn_set"
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_double"
+                        android:layout_marginRight="@dimen/margin_double"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/icon_shezhi"
+                        android:gravity="center"
+                        android:text="设置"
+                        android:textColor="@color/transblack"
+                        android:textSize="@dimen/fivesize" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="40px"
+                    android:background="@color/bluegreen" />
+
+
+                <Button
+                    android:id="@+id/btn_myfriend"
+                    style="@style/myaccount_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_height"
+                    android:text="好友动态"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="40px"
+                    android:background="@color/bluegreen" />
+
+                <Button
+                    android:id="@+id/btn_notification"
+                    style="@style/myaccount_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_height"
+                    android:text="通知"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/margin_double"
+                    android:background="@color/lightgray"/>
+
+                <Button
+                    android:id="@+id/btn_outline"
+                    style="@style/myaccount_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_height"
+                    android:text="离线"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/margin_double"
+                    android:background="@color/lightgray"/>
+
+                <Button
+                    android:id="@+id/btn_outdoor"
+                    style="@style/myaccount_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_height"
+                    android:text="活动"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/margin_double"
+                    android:background="@color/lightgray"/>
+
+                <Button
+                    android:id="@+id/btn_news"
+                    style="@style/myaccount_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_height"
+                    android:text="资讯"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/margin_double"
+                    android:background="@color/lightgray"/>
+
+                <Button
+                    android:id="@+id/btn_feedback"
+                    style="@style/myaccount_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_height"
+                    android:text="反馈"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</ScrollView>
+

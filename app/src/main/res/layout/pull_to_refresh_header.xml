@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/pull_to_refresh_header_content"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="8dp">
+
+        <RelativeLayout
+            android:id="@+id/pull_to_refresh_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/pull_to_refresh_header_hint_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="松开刷新数据"
+                android:textColor="#999999"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+        <ProgressBar
+            android:id="@+id/pull_to_refresh_header_progressbar"
+            android:layout_width="28dip"
+            android:layout_height="28dip"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/pull_to_refresh_header_text"
+            android:gravity="center"
+            android:indeterminateDrawable="@anim/update_loading_progressbar"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</LinearLayout>

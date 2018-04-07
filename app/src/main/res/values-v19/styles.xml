@@ -1,0 +1,26 @@
+<resources>
+    <!--沉浸式标题栏
+        Base application theme for API 19+.
+    -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="frameAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- API 14 theme customizations can go here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/cardview_light_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+        <!--通过设置Activity主体的形式设置Activity的切换动画-->
+        <!--<item name="android:windowAnimationStyle">@style/anim_activity</item>-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>

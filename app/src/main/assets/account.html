@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>新手必读</title>
+    <style>
+        ul {
+            list-style: none;font-size:13px;
+            padding: 0px 0px 10px 0px;
+            border-bottom: 1px solid #f1f1f1;
+            margin: 20px;
+        }
+
+            ul li {
+                line-height: 30px;
+            }
+
+                ul li.title {
+                    list-style: disc;
+                }
+
+                ul li.tcontent {
+                    display: none;
+                }
+    </style>
+    <script>
+        var ullist = document.getElementsByTagName("ul");
+        window.onload = function () {
+            for (var i = 0; i < ullist.length; i++) {
+                ullist[i].onclick = function () {
+                    ulhidden();
+                    this.getElementsByTagName("li")[1].style.display = "inline";
+                 }
+            }
+        }
+        function ulhidden(){
+            for (var i = 0; i < ullist.length; i++) {
+                ullist[i].getElementsByTagName("li")[1].style.display = "none";
+            }
+}
+    </script>
+</head>
+<body>
+    <ul>
+        <li class="title">忘记极速云天气登陆密码怎么办？</li>
+        <li class="tcontent">
+            <p>您可以进入【登录】页面，点击【忘记密码】，完成密码重置。</p>
+        </li>
+    </ul>
+    <ul>
+        <li class="title">
+            如何修改登录密码？
+        </li>
+        <li class="tcontent">
+            <p>登录极速云天气，进入【设置—账户安全】页面，点击【修改登录密码】，完成登陆密码修改。</p>
+        </li>
+    </ul>
+
+</body>
+</html>

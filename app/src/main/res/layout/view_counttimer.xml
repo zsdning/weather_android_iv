@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/layout_counttimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_day"
+            style="@style/skyblueFiveSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/double_integer" />
+
+        <TextView
+            style="@style/grayFiveSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day" />
+
+        <TextView
+            android:id="@+id/tv_hour"
+            style="@style/skyblueFiveSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/double_integer" />
+
+        <TextView
+            style="@style/grayFiveSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hour" />
+
+        <TextView
+            android:id="@+id/tv_minute"
+            style="@style/skyblueFiveSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/double_integer" />
+
+        <TextView
+            style="@style/grayFiveSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minute" />
+
+        <TextView
+            android:id="@+id/tv_second"
+            style="@style/skyblueFiveSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/double_integer" />
+
+        <TextView
+            style="@style/grayFiveSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/second" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_last"
+        style="@style/grayFiveSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="截止" />
+
+</LinearLayout>

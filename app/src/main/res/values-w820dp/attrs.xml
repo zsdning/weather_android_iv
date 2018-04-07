@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="App">
+        <!-- View attributes -->
+        <attr name="normal" format="integer" />
+        <attr name="selected" format="integer" />
+        <attr name="unselected" format="integer" />
+        <attr name="gestureColor" format="integer" />
+        <attr name="gestureWidth" format="dimension" />
+        <attr name="percent" format="integer" />
+        <attr name="gestureCode" format="reference" />
+        <attr name="correction" format="integer" />
+        <attr name="normal_0" format="integer" />
+        <attr name="normal_1" format="integer" />
+        <attr name="normal_2" format="integer" />
+        <attr name="normal_3" format="integer" />
+        <attr name="normal_5" format="integer" />
+        <attr name="normal_6" format="integer" />
+        <attr name="normal_7" format="integer" />
+        <attr name="normal_8" format="integer" />
+        <attr name="selected_0" format="integer" />
+        <attr name="selected_1" format="integer" />
+        <attr name="selected_2" format="integer" />
+        <attr name="selected_3" format="integer" />
+        <attr name="selected_5" format="integer" />
+        <attr name="selected_6" format="integer" />
+        <attr name="selected_7" format="integer" />
+        <attr name="selected_8" format="integer" />
+        <attr name="showArrow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="roundedimageview1">
+        <attr name="border_thickness1" format="dimension" />
+        <attr name="border_inside_color1" format="color" />
+        <attr name="border_outside_color1" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="swipelistviewstyle1">
+        <attr name="right_width1" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ViewFlow">
+        <attr name="sidebuffer" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleFlowIndicator">
+        <attr name="activeColor" format="color" />
+        <attr name="inactiveColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="centered" format="boolean" />
+        <attr name="fadeOut" format="integer" />
+        <attr name="inactiveType">
+            <flag name="stroke" value="0" />
+            <flag name="fill" value="1" />
+        </attr>
+        <attr name="activeType">
+            <flag name="stroke" value="0" />
+            <flag name="fill" value="1" />
+        </attr>
+        <attr name="circleSeparation" format="dimension" />
+        <attr name="activeRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="round_progress_bar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="maxCount" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="roundProgressMaxColor" format="color" />
+        <attr name="textMaxColor" format="color"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TextImageButton">
+        <attr name="ibTextSize" format="reference|dimension"></attr>
+        <attr name="ibText" format="reference|string"></attr>
+        <attr name="ibTextColor" format="reference|color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="FancyButtonsAttrs">
+        <attr name="defaultColor" format="color" />
+        <attr name="text" format="string" />
+        <attr name="fbtextColor" format="color" />
+        <attr name="iconColor" format="color" />
+        <attr name="textFont" format="string" />
+        <attr name="iconFont" format="string" />
+        <attr name="fbtextSize" format="dimension" />
+        <attr name="iconResource" format="integer" />
+        <attr name="fontIconResource" format="string" />
+        <attr name="fontIconSize" format="dimension" />
+        <attr name="iconPosition" format="enum">
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+            <enum name="top" value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+        <attr name="textPosition" format="enum">
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+            <enum name="top" value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+        <attr name="textGravity" format="enum">
+            <enum name="top" value="0x30" />
+            <enum name="bottom" value="0x50" />
+            <enum name="left" value="0x03" />
+            <enum name="right" value="0x05" />
+            <enum name="center_vertical" value="0x10" />
+            <enum name="fill_vertical" value="0x70" />
+            <enum name="center_horizontal" value="0x01" />
+            <enum name="fill_horizontal" value="0x07" />
+            <enum name="center" value="0x11" />
+            <enum name="fill" value="0x77" />
+            <enum name="clip_vertical" value="0x80" />
+            <enum name="clip_horizontal" value="0x08" />
+            <enum name="start" value="0x00800003" />
+            <enum name="end" value="0x00800005" />
+        </attr>
+        <attr name="iconPaddingLeft" format="dimension" />
+        <attr name="iconPaddingRight" format="dimension" />
+        <attr name="iconPaddingTop" format="dimension" />
+        <attr name="iconPaddingBottom" format="dimension" />
+        <attr name="borderColor" format="color" />
+        <!--<attr name="borderWidth" format="dimension" />-->
+        <attr name="focusColor" format="color" />
+        <attr name="fbradius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer" />
+        <attr name="animDuration" format="integer" />
+        <attr name="animAlphaStart" format="float" />
+        <attr name="expandDrawable" format="reference" />
+        <attr name="collapseDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RefreshView">
+        <attr name="type" format="enum">
+            <enum name="sun" value="0" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension" />
+        <attr name="ci_height" format="dimension" />
+        <attr name="ci_margin" format="dimension" />
+        <attr name="ci_animator" format="reference" />
+        <attr name="ci_animator_reverse" format="reference" />
+        <attr name="ci_drawable" format="reference" />
+        <attr name="ci_drawable_unselected" format="reference" />
+    </declare-styleable>
+
+</resources>

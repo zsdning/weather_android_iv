@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>注册与充值</title>
+    <style>
+        ul{list-style:none; padding:0px 0px 10px 0px; border-bottom:1px solid #f1f1f1; margin:20px;font-size:13px;}
+        ul li{line-height:30px;}
+        ul li.title{list-style:disc; }
+         ul li.tcontent{display:none; }
+
+    </style>
+    <script>
+        var ullist = document.getElementsByTagName("ul");
+        window.onload = function () {
+            for (var i = 0; i < ullist.length; i++) {
+                ullist[i].onclick = function () {
+                    ulhidden();
+                    this.getElementsByTagName("li")[1].style.display = "inline";
+                 }
+            }
+        }
+        function ulhidden(){
+            for (var i = 0; i < ullist.length; i++) {
+                ullist[i].getElementsByTagName("li")[1].style.display = "none";
+            }
+}
+    </script>
+</head>
+<body>
+        <ul>
+            <li class="title">注册时，对用户名有什么要求吗？</li>
+            <li class="tcontent">
+                <p>用户名应为2-16位字符，不能是邮箱、手机号。</p>
+</li>
+        </ul>
+        <ul>
+            <li class="title">
+                注册时，输入了手机号码，没有收到验证码怎么办？
+            </li>
+            <li class="tcontent">
+                <p>1. 请确认手机是否安装短信拦截或过滤软件；</p>
+                <p>2. 请确认手机是否能够正常接收短信（是否有信号问题、欠费、停机等因素）；</p>
+                <p>3. 短信收发过程中可能会存在延迟，请耐心等待，短信在10分钟内均有效；</p>
+                <p>4. 您还可以联系客服，寻求帮助（客服电话：13052098358）。</p>
+</li>
+        </ul>
+        <ul>
+            <li class="title">注册成功之后用户名可以修改吗？</li>
+            <li class="tcontent"><p>注册成功后用户名不能再进行修改。</p></li>
+        </ul>
+        <ul>
+            <li class="title">
+                注册成功之后手机号码可以更换吗？
+            </li>
+            <li class="tcontent"><p>手机号码是用户注册的主要认证渠道，也是修改平台密码、修改邮箱时验证用户的关键依据。为确保用户账户的安全性，本平台不支持在线修改用户注册时留下的手机号码。如确需修改手机号码，您可以致电本平台客服热线（13052098358），申请修改手机号码，并根据客服要求提交相关身份证明材料。</p></li>
+        </ul>
+        <ul>
+            <li class="title">
+                一个手机号可以绑定几个极速云天气账号？
+            </li>
+            <li class="tcontent"><p>一个手机号只能绑定一个极速云天气会员账号。</p></li>
+        </ul>
+        <ul>
+            <li class="title">
+                登录时忘记用户名怎么办？
+            </li>
+            <li class="tcontent"><p>您可以通过手机号和密码进行登录。</p></li>
+        </ul>
+
+</body>
+</html>

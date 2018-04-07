@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluegreen"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/toptitle"
+        layout="@layout/include_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <LinearLayout
+        style="@style/padding_margin_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_rect"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.iframe.view.ClearEditText
+            android:id="@+id/regist_name_input"
+            style="@style/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:hint="@string/login_name"
+            android:padding="0dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <com.iframe.view.ClearEditText
+            android:id="@+id/regist_phone_input"
+            style="@style/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:hint="@string/regesiter_user_mobile"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:padding="0dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:orientation="horizontal" >
+
+            <com.iframe.view.ClearEditText
+                android:id="@+id/regist_verify_input"
+                style="@style/edit_text"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/title_height"
+                android:layout_weight="5"
+                android:hint="@string/regesiter_user_code"
+                android:inputType="numberSigned"
+                android:maxLength="6"
+                android:padding="0dp" />
+
+            <Button
+                android:id="@+id/regist_verify_btn"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/btn_stroke_gray_selector"
+                android:text="@string/regesiter_getcode"
+                android:textColor="@color/basecolor"
+                android:textSize="@dimen/fivesize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+        <com.iframe.view.ClearEditText
+            android:id="@+id/regist_pwd_input"
+            style="@style/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:hint="@string/regist_pwd"
+            android:padding="0dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <com.iframe.view.ClearEditText
+            android:id="@+id/regist_confirm_pwd_input"
+            style="@style/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:hint="@string/regist_confirm_pwd"
+            android:padding="0dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <com.iframe.view.ClearEditText
+            android:id="@+id/regist_recommend_input"
+            style="@style/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:hint="@string/regist_recommend"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:padding="0dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/regist_btn"
+        style="@style/orange_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:text="@string/regist_btn" />
+
+</LinearLayout>

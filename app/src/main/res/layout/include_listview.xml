@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:divider="@color/transparent"
+    android:dividerHeight="@dimen/margin_half"
+    android:fadingEdge="none"
+    android:layoutAnimation="@anim/list_anim_layout"
+    android:listSelector="@color/translucent_background"
+    android:scrollbars="none"
+    android:scrollbarStyle="outsideOverlay"/>
+    <!--android:transcriptMode="alwaysScroll"-->

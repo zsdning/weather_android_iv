@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo_gallery_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="服务时间：工作日9:00-18:00"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#DAD9DB" />
+
+    <!-- <Button -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@drawable/photo_camera_selector" -->
+    <!-- android:paddingBottom="10dip" -->
+    <!-- android:paddingTop="10dip" -->
+    <!-- android:text="15242697658" -->
+    <!-- android:textSize="16sp" /> -->
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo_camera_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="呼叫：000-000-0000"
+        android:textColor="@color/basecolor"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/photo_cancel_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="取消"
+        android:textColor="@color/transblack"
+        android:textSize="16sp" />
+
+</LinearLayout>

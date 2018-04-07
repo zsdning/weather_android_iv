@@ -1,0 +1,271 @@
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="frameAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/cardview_light_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+        <!--通过设置Activity主体的形式设置Activity的切换动画-->
+        <!--<item name="android:windowAnimationStyle">@style/anim_activity</item>-->
+    </style>
+
+    <style name="frameShareTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- 字体 -->
+    <style name="blackSixSize">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sixSize</item>
+    </style>
+
+    <style name="blackFiveSize">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/fivesize</item>
+    </style>
+
+    <style name="skyblueFiveSize">
+        <item name="android:textColor">@color/skyblue</item>
+        <item name="android:textSize">@dimen/fivesize</item>
+    </style>
+
+    <style name="transBlackFiveSize">
+        <item name="android:textSize">@dimen/fivesize</item>
+        <item name="android:textColor">@color/transblack</item>
+    </style>
+
+    <style name="transBlackSixSize">
+        <item name="android:textSize">@dimen/sixSize</item>
+        <item name="android:textColor">@color/transblack</item>
+    </style>
+
+    <style name="lightBlackFiveSize">
+        <item name="android:textSize">@dimen/fivesize</item>
+        <item name="android:textColor">@color/lightblack</item>
+    </style>
+
+    <style name="lightBlackSixSize">
+        <item name="android:textSize">@dimen/sixSize</item>
+        <item name="android:textColor">@color/lightblack</item>
+    </style>
+
+    <style name="grayFiveSize">
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="android:textSize">@dimen/fivesize</item>
+    </style>
+
+    <style name="bottom_tab">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/tab_title_size</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">3dip</item>
+        <item name="android:background">@color/gray_bg</item>
+        <item name="android:textColor">@drawable/color_gray_basecolor</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <!-- 边距样式 -->
+    <style name="margin_style">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+    </style>
+
+    <style name="padding_margin_style" parent="@style/margin_style">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <!-- EditText样式 橙色背景-->
+    <style name="edit_text">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/sixSize</item>
+        <item name="android:textColorHint">@color/lightblack</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- EditText样式 灰色背景-->
+    <style name="calculate_text">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/sixSize</item>
+        <item name="android:textColorHint">@color/darkgray</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@drawable/et_lightgraycolor</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <!-- Dialog样式 -->
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/photo_choose_bg</item>
+    </style>
+
+
+    <!-- 加载dialog展现动画 -->
+    <!-- 对话框为向上弹出 向下退出 -->
+    <style name="animdialogstyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <!-- 对话框为向右弹出 向左退出 -->
+    <style name="dialogWindowAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_left</item>
+    </style>
+
+    <!-- 动画 -->
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+
+    <!-- 登录 -->
+    <style name="login_label">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sixSize</item>
+        <item name="android:textColor">@color/transblack</item>
+    </style>
+
+    <!-- 按钮 -->
+    <style name="orange_button" parent="@style/margin_style">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textSize">@dimen/nineSize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/btn_lightred_corner</item>
+    </style>
+
+
+    <!-- 从下往上弹出风格的dialog -->
+    <style name="menu_dialog" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowAnimationStyle">@style/bottom_anim_style</item>
+    </style>
+    <!-- 从上往下弹出的dialog -->
+    <style name="search_dialog" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowAnimationStyle">@style/top_anim_style</item>
+    </style>
+    <!-- 从下往上运动动画 -->
+    <style name="bottom_anim_style">
+        <item name="android:windowEnterAnimation">@anim/in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/out_from_bottom</item>
+    </style>
+    <!-- 从上往下运动动画 -->
+    <style name="top_anim_style">
+        <item name="android:windowEnterAnimation">@anim/in_from_top</item>
+        <item name="android:windowExitAnimation">@anim/out_from_top</item>
+    </style>
+
+    <style name="Label">
+        <item name="android:textSize">@dimen/text_lg</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Label.Shadow" parent="@style/Label">
+        <item name="android:shadowColor">#88000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.5</item>
+    </style>
+
+    <style name="Label.Shadow.Medium" parent="@style/Label.Shadow">
+        <item name="android:textSize">@dimen/text_md</item>
+    </style>
+
+    <style name="Label.Medium" parent="@style/Label">
+        <item name="android:textSize">@dimen/text_md</item>
+    </style>
+
+
+    <!-- 我的账户页button -->
+    <style name="myaccount_button" parent="@style/transBlackSixSize">
+        <item name="android:paddingLeft">@dimen/margin_double</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:drawableRight">@drawable/icon_graygo</item>
+        <item name="android:paddingRight">@dimen/margin_double</item>
+        <item name="android:textSize">@dimen/sevenSize</item>
+        <item name="android:textColor">@color/transblack</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <!-- 设置页button -->
+    <style name="setting_button" parent="@style/transBlackSixSize">
+        <item name="android:paddingLeft">@dimen/margin</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:drawableRight">@drawable/icon_graygo</item>
+        <item name="android:paddingRight">@dimen/margin</item>
+        <item name="android:textSize">@dimen/sevenSize</item>
+        <item name="android:textColor">@color/transblack</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- 帮助页button -->
+    <style name="help_button" parent="@style/transBlackSixSize">
+        <item name="android:paddingLeft">@dimen/margin</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:drawableRight">@drawable/icon_graygo</item>
+        <item name="android:paddingRight">@dimen/margin</item>
+        <item name="android:textSize">@dimen/sevenSize</item>
+        <item name="android:textColor">@color/transblack</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="NewsTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">40dp</item>
+    </style>
+
+
+    <!-- 设置Activity主体的形式设置Activity的切换动画 -->
+    <style name="anim_activity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_open_in_anim</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_open_out_anim</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_close_in_anim</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_close_out_anim</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.iframe"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+
+        // AndFix的so文件只支持armeabi和x86
+        ndk {
+            abiFilters "armeabi"
+        }
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/commons-codec-1.9.jar')
+    compile files('libs/jackson-annotations-2.6.4.jar')
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile project(':lib.dropdownmenu')
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile 'com.android.support:cardview-v7:23.3.0'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.alipay.euler:andfix:0.4.0@aar'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.2@aar'
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.9
+    compile files('libs/okhttp-2.7.0.jar')
+    compile files('libs/okio-1.6.0.jar')
+    compile files('libs/retrofit-2.0.0-beta2.jar')
+    compile files('libs/Android_Location_V1.1.2.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
+    compile files('libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar')
+    compile files('libs/ShareSDK-Core-2.7.4.jar')
+    compile files('libs/ShareSDK-Wechat-2.7.4.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.7.4.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-2.7.4.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.7.4.jar')
+    compile files('libs/MobTools-2016.0707.1708.jar')
+    compile files('libs/MobCommons-2016.0707.1708.jar')
+    compile files('libs/ShareSDK-Alipay-2.7.5.jar')
+    compile files('libs/ShareSDK-Douban-2.7.5.jar')
+    compile files('libs/ShareSDK-Email-2.7.5.jar')
+    compile files('libs/ShareSDK-Facebook-2.7.5.jar')
+    compile files('libs/ShareSDK-FacebookMessenger-2.7.5.jar')
+    compile files('libs/ShareSDK-QQ-2.7.5.jar')
+    compile files('libs/ShareSDK-QZone-2.7.5.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.7.5.jar')
+    compile files('libs/ShareSDK-TencentWeibo-2.7.5.jar')
+    compile files('libs/ShareSDK-Twitter-2.7.5.jar')
+    compile files('libs/ShareSDK-YouDao-2.7.5.jar')
+    compile files('libs/library-2.4.0.jar')
+}

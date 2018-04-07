@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluegreen"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/include_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <Button
+        android:id="@+id/btn_regist"
+        style="@style/help_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginTop="@dimen/margin"
+        android:onClick="goRegist"
+        android:text="注册登录" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/margin"
+        android:background="@color/lightgray" />
+
+    <Button
+        android:id="@+id/btn_new"
+        style="@style/help_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:onClick="goAccount"
+        android:text="账户密码" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/margin"
+        android:background="@color/lightgray" />
+
+    <Button
+        android:id="@+id/btn_tuijian"
+        style="@style/help_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:onClick="goTuijian"
+        android:text="推荐好友" />
+
+</LinearLayout>

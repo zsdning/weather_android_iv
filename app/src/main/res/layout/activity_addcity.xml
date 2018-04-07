@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/city_add_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|center"
+    android:background="@color/bluegreen"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top_bar"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toptitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            layout="@layout/include_back" />
+
+        <RelativeLayout
+            android:id="@+id/queryCitySearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:addStatesFromChildren="true">
+
+            <RelativeLayout
+                android:id="@+id/queryCitySearchlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/bg_search1"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:completionThreshold="1"
+                    android:dropDownHorizontalOffset="34.0dip"
+                    android:dropDownVerticalOffset="0.0dip"
+                    android:dropDownWidth="240dp"
+                    android:gravity="left|center_vertical"
+                    android:hint="请输入城市名称、拼音、区号或邮编"
+                    android:paddingRight="35dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#ffaeb8c2"
+                    android:textSize="12sp" />
+
+                <ImageButton
+                    android:id="@+id/ivDeleteText"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/city_query_delete"
+                    android:gravity="center_vertical"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:text="搜索"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:drawableLeft="@drawable/current_loc_active_26x26"
+                android:textColor="@color/black"
+                android:text="当前位置:"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <!--<TextView
+            android:id="@+id/hotCityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="热门城市"/>
+
+        <View
+            android:id="@+id/queryCityDivider"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/line_parting" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dp"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:dividerHeight="0dp"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+
+            <ListView
+                android:id="@+id/search_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dp"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:dividerHeight="0dp"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_noresult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="抱歉,暂时没有找到相关城市"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:visibility="gone"
+                 />
+
+            <com.iframe.view.CityLetterListView
+                android:id="@+id/MyLetterListView01"
+                android:layout_width="25dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="7dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

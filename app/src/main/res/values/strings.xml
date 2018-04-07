@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">极速云天气</string>
+
+    <!-- 登录注册 -->
+    <string name="login_account_label">账号</string>
+    <string name="login_password_label">密码</string>
+    <string name="login_password_code">验证</string>
+    <string name="login_register">免费注册</string>
+    <string name="login_forgetpassword">忘记密码</string>
+    <string name="login_user_hintname">请输入手机号或者用户名</string>
+    <string name="login_user_hintpwd">请输入登录密码</string>
+    <string name="login_user_hintcode">请输入验证码</string>
+    <string name="login">登录</string>
+    <string name="regesiter">注册</string>
+    <string name="regesiter_user_hintname">请填写用户名</string>
+    <string name="regesiter_user_hintpwd">请填写不少于6位登录密码</string>
+    <string name="regesiter_user_hintcommitpwd">请确认登录密码</string>
+    <string name="regesiter_user_mobile">请输入手机号码</string>
+    <string name="regesiter_user_code">请输入验证码</string>
+    <string name="regesiter_user_imagecode">请输入图形码</string>
+    <string name="regesiter_getcode">获取验证码</string>
+    <string name="next_step">下一步</string>
+    <string name="regist_gesture">请绘制手势密码</string>
+    <string name="regist_gesture_repeat">请再次绘制手势密码</string>
+    <string name="regist_gesture_false">两次手势密码不一致，请再次绘制</string>
+    <string name="repeat_draw">重新绘制</string>
+    <string name="gesture_tip">您必须设置手势密码，以保证您的隐私信息</string>
+    <string name="regesiter_officecode">请输入您的企业验证码</string>
+    <string name="regesiter_username">请输入用户名</string>
+    <string name="regesiter_yaoqing">请输入推荐人得手机号（选填）</string>
+    <string name="hint_imagecode">请输入右侧验证码</string>
+
+    <!-- 密码 -->
+    <string name="forgetpwd">忘记密码</string>
+    <string name="changepwd">修改密码</string>
+
+    <!--login-->
+    <string name="login_name">登录名</string>
+    <string name="login_pwd">登录密码</string>
+    <string name="login_image">图形验证码</string>
+    <string name="login_btn">登录</string>
+    <string name="login_regist_btn">还没有账号？</string>
+    <string name="login_forget_btn">忘记了密码？</string>
+
+    <!--regist-->
+    <string name="regist_title">用户注册</string>
+    <string name="regist_name">用户名</string>
+    <string name="regist_phone">手机号</string>
+    <string name="regist_verify">短信验证码</string>
+    <string name="regist_pwd">密码</string>
+    <string name="regist_confirm_pwd">确认密码</string>
+    <string name="regist_recommend">推荐人手机号(选填)</string>
+    <string name="regist_verify_btn">获取短信验证码</string>
+    <string name="regist_btn">注册</string>
+
+    <!--forgetpwd-->
+    <string name="fgpwd_phone">手机号</string>
+    <string name="fgpwd_real">真实姓名</string>
+    <string name="fgpwd_id">身份证号</string>
+    <string name="fgpwd_img">图形验证码</string>
+    <string name="fgpwd_btn">忘记密码</string>
+
+    <!--settings-->
+    <string name="settings_updatepwd">修改密码</string>
+    <string name="settings_settradepwd">设置交易密码</string>
+    <string name="settings_resettradepwd">重置交易密码</string>
+    <string name="settings_phone">设置手机</string>
+    <string name="settings_bankcard">我的银行卡</string>
+    <string name="settings_gestureback">修改手势密码</string>
+    <string name="settings_coupon">我的奖券</string>
+    <string name="settings_about">关于</string>
+    <string name="settings_logout">退出</string>
+
+    <!--updatepwd-->
+    <string name="updatepwd_old">原有密码</string>
+    <string name="updatepwd_new1">新密码</string>
+    <string name="updatepwd_new2">确认新密码</string>
+    <string name="updatepwd_btn">确定</string>
+
+    <!-- 倒计时 -->
+    <string name="day">天</string>
+    <string name="hour">小时</string>
+    <string name="minute">分</string>
+    <string name="second">秒</string>
+    <string name="double_integer">00</string>
+
+
+    <!-- 首页 -->
+    <string name="tab_product">发现</string>
+    <string name="tab_main">天气</string>
+    <string name="tab_news">新闻</string>
+    <string name="tab_my">我的</string>
+    <string name="tab_set">设置</string>
+
+    <!-- 网络 -->
+    <string name="nonet">无网络连接，请检查网络</string>
+    <string name="netlong">网络连接超时，请重试</string>
+    <string name="base_net_error">网络错误，请稍后再试</string>
+
+    <!-- 广告Banner -->
+    <dimen name="view_small_padding">1dp</dimen>
+    <dimen name="view_padding">6dp</dimen>
+
+
+    <string name="integer">%1$d</string>
+    <string name="string">%1$s</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="app_information">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\
+        本应用是以简洁作为核心要素的一款轻型实用天气软件哦!如果您想了解更多,\
+        欢迎访问我的博客主页:http://blog.csdn.net/way_ping_li,\
+        由于时间仓促，错误与疏忽之处在所难免,\
+        欢迎各位提出宝贵的建议！</string>
+
+    <string name="all_rights_reserved">Copyright © 2012-2015 way. All Rights Reserved.</string>
+
+</resources>

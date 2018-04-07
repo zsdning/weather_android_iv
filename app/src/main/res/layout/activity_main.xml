@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightbluegreen"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <include
+        android:id="@+id/toptitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentTop="true"
+        layout="@layout/include_back" />
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_tab_main"
+            style="@style/bottom_tab"
+            android:layout_weight="1"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_main_selector"
+            android:text="@string/tab_main" />
+
+        <RadioButton
+            android:id="@+id/rb_tab_product"
+            style="@style/bottom_tab"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tab_product_selector"
+            android:text="@string/tab_product" />
+        <RadioButton
+            android:id="@+id/rb_tab_my"
+            style="@style/bottom_tab"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tab_my_selector"
+            android:text="@string/tab_my" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/cutline"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/rg_main"
+        android:background="@color/gray" />
+
+    <com.iframe.view.CustomViewPager
+        android:id="@+id/layout_content"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/cutline"
+        android:layout_below="@id/toptitle"
+        android:background="@color/translucent_background" />
+
+</RelativeLayout>
